@@ -1,0 +1,40 @@
+[user]
+    name = Akira Kusumoto
+    email = akirakusumo10@gmail.com
+[alias]
+    ci = commit
+    cim = commit -m 
+    st = status --ignore-submodules=dirty
+#    st = status -sb
+    co = checkout
+    url = config --get remote.origin.url
+    pr = pull --rebase
+    rbm = rebase master
+    rc = rebase --continue
+    lp = log -p
+    ls = log --stat
+    lg= log --decorate
+    lgg= log --decorate --oneline --graph
+    wd= diff --word-diff
+    fo = fetch origin
+    ro = rebase origin
+    b = branch
+    bm = branch --merged
+    d = diff
+    ds = diff --staged
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactvie = auto
+    grep = auto
+[status]
+    diff = auto
+[branch]
+    diff = auto
+[core]
+    editor = emacs
+    excludesfile = ~/.gitignore
+    autocrlf = input
+[push]
+    default = tracking

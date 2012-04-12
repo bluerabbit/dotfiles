@@ -1,0 +1,65 @@
+alias vi="vim"
+alias view="vim -R"
+alias diff=colordiff
+alias ls='ls -GF'
+alias la='ls -a'
+alias ll='ls -al'
+alias cdp='cd -P'
+alias tm="tmux -2 attach"
+
+alias l='ls -CF'
+alias dir='ls -al'
+alias h='history'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+# ディレクトリの履歴 
+alias gd='dirs -v; echo -n "select number: "; read newdir; cd -"$newdir"'
+alias emacs='emacs -nw'
+
+# for mac
+alias fcd='source ~/bin/fcd.sh'
+alias here='open .'
+
+# for bundler
+alias be='bundle exec'
+alias bu='bundle update'
+alias bi='bundle install'
+
+alias clup="find -E . -regex '.*\/(#.*#|.*~)' -print0 |xargs -0 rm"
+
+alias g='git'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+
+### functions
+function chpwd() { ls }
+
+function psg() {
+  psa | head -n 1
+  psa | grep $* | grep -v "ps -auxww" | grep -v grep
+}
+
+# up command
+# http://gist.github.com/607290
+# http://d.hatena.ne.jp/hitode909/20101002/1285994430
+function up() {
+    to=$(perl -le '$p=$ENV{PWD}."/";$d="/".$ARGV[0]."/";$r=rindex($p,$d);$r>=0 && print substr($p, 0, $r+length($d))' $1)
+    if [ "$to" = "" ]; then
+        echo "no such file or directory: $1" 1>&2
+        return 1
+    fi
+    cd $to
+}
+
+# cdb
+function cdb() {
+  cd `ruby -e "require 'rubygems';gem 'bundler';require 'bundler';Bundler.load.specs.each{|s| puts s.full_gem_path if s.name == '${1}'}"`
+}
+
+
+# for mac applications
+alias ce='open -a /Applications/Emacs.app/Contents/MacOS/Emacs'
+
