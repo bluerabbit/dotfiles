@@ -1,1 +1,11 @@
 --type-add=ruby=.haml
+--type-add=ruby=.rake
+--type-add=js=.javascript
+--type-add=js=.coffee
+--type-add=css=.less
+--type-set=sass=.sass
+--type-set=scss=.scss
+--type-set=haml=.haml
+--type-set=coffee=.coffee
+--type-set=feature=.feature
+--type-set=erb=.erb
