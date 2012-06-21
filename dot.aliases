@@ -6,6 +6,7 @@ alias la='ls -a'
 alias ll='ls -al'
 alias cdp='cd -P'
 alias tm="tmux -2 attach"
+alias tailf="tail -f"
 
 alias l='ls -CF'
 alias dir='ls -al'
