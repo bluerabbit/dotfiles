@@ -31,7 +31,13 @@ function ruby_prompt {
         echo "[$result]"
     fi
 }
- 
+
+function git_stash_count {
+    result=`git stash list 2>/dev/null | wc -l | tr -d ' '`
+    if [ "$result" != 0 ] ; then
+	echo " stash:$result"
+    fi
+}
 precmd () {
     psvar=()
     vcs_info
@@ -40,7 +46,7 @@ precmd () {
 
 RUBY_INFO=$'%{$RUBY_COLOR%}$(ruby_prompt)%{${reset_color}%}'
 RPROMPT="${RUBY_INFO}%{${reset_color}%}"
-PROMPT=$'%{$fg[yellow]%}%n%{$fg[red]%}@$fg[green]%}%m %{$fg[cyan]%}%~ %1(v|%F{green}%1v%f|)\n%{$fg[green]%}%#%{$reset_color%} '
+PROMPT=$'%{$fg[yellow]%}%n%{$fg[red]%}@$fg[green]%}%m %{$fg[cyan]%}%~ %1(v|%F{green}%1v%f|)$(git_stash_count)\n%{$fg[green]%}%#%{$reset_color%}'
 
 # http://www.machu.jp/diary/20040329.html#p01
 # プロンプトを’[user@hostname] $ ’の形式で表示　一般ユーザは $ でrootは # にする
