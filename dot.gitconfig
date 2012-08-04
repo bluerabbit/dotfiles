@@ -22,6 +22,7 @@
     bm = branch --merged
     d = diff
     ds = diff --staged
+    rmall = "!f() { git status | grep deleted: | awk '{print $3}'  | xargs ; }; git rm `f`"
 [color]
     diff = auto
     status = auto
