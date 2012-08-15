@@ -8,6 +8,9 @@ brew install autojump
 brew install rbenv
 brew install ruby-build
 
+gem update --system
+gem update
+gem install bundler
+gem install pry pry-doc pry-remote
+gem install powder
 gem install tmuxinator
-gem install pry
-gem install pry-remote
