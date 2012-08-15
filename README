@@ -1,0 +1,13 @@
+brew update
+brew install git
+brew install tmux
+brew install reattach-to-user-namespace
+brew install emacs
+brew install tig
+brew install autojump
+brew install rbenv
+brew install ruby-build
+
+gem install tmuxinator
+gem install pry
+gem install pry-remote
