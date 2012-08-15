@@ -1,0 +1,11 @@
+# ~/.tmuxinator/sample.yml
+# you can make as many tabs as you wish...
+
+project_name: RailsSample
+project_root: ~/workspace/rails_project
+tabs:
+  - shell: git status
+  - console: rails c
+  - server: rails s
+  - logs: tail -f logs/development.log
+  - test: guard
