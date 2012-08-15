@@ -175,3 +175,5 @@ if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
 
+# 3秒以上かかった処理は詳細表示
+REPORTTIME=3
