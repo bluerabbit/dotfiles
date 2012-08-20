@@ -177,3 +177,5 @@ fi
 
 # 3秒以上かかった処理は詳細表示
 REPORTTIME=3
+
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
