@@ -1,0 +1,10 @@
+# open commit at github
+bind main o !@hub browse -- commit/%(commit)
+bind diff o !@hub browse -- commit/%(commit)
+bind log  o !@hub browse -- commit/%(commit)
+
+#set show-author = no
+#set show-date = relative
+set show-refs = yes
+set show-rev-graph = yes
+set line-graphics = yes
