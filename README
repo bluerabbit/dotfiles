@@ -12,6 +12,6 @@ brew install ruby-build
 gem update --system
 gem update
 gem install bundler
-gem install pry pry-doc pry-remote
+gem install pry pry-doc pry-remote pry-nav
 gem install powder
 gem install tmuxinator
