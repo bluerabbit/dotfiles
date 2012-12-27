@@ -1,4 +1,5 @@
 [mysql]
+auto-rehash
 prompt = '\U [\d] >\_'
 
 [mysqld]
