@@ -1,6 +1,6 @@
 [mysql]
 auto-rehash
-prompt = '\U [\d] >\_'
+prompt = '\R:\m \U [\d]>\_'
 
 [mysqld]
 long_query_time=1
