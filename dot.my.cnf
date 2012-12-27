@@ -1,0 +1,4 @@
+[mysqld]
+long_query_time=1
+slow_query_log=1
+slow-query-log-file=~/mysqld-slow-query.log
