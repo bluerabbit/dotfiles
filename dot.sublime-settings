@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/Railscasts.tmTheme",
+	"font_face": "Osaka",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_top": 4,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
+}
