@@ -1,0 +1,6 @@
+[
+	{ "keys": ["super+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["ctrl+t", "p"], "command": "prev_view" },
+	{ "keys": ["ctrl+t", "n"], "command": "next_view" },
+	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
+]
