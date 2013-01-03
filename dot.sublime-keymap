@@ -34,5 +34,7 @@
 			"rows": [0.0, 0.5, 1.0],
 			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
 		}
-	}
+	},
+	{ "keys": ["ctrl+t", "O"], "command": "focus_group", "args": { "group": 0 } }, // Windowのフォーカス切り替え本当はtoggleにしたい
+	{ "keys": ["ctrl+t", "o"], "command": "focus_group", "args": { "group": 1 } }
 ]
