@@ -4,5 +4,35 @@
     { "keys": ["ctrl+t", "n"], "command": "next_view" },
     { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
     { "keys": ["alt+up"], "command": "swap_line_up" },
-    { "keys": ["alt+down"], "command": "swap_line_down" }
+    { "keys": ["alt+down"], "command": "swap_line_down" },
+	{
+		"keys": ["ctrl+t", "g"], // 画面分割の解除
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+t", "h"], // 左右に画面分割
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+t", "v"], // 上下に画面分割
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.5, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	}
 ]
