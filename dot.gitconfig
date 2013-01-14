@@ -4,6 +4,7 @@
 [alias]
     ci = commit
     cim = commit -m 
+    cima = git commit --amend -m 
     st = status --ignore-submodules=dirty
 #    st = status -sb
     co = checkout
