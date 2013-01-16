@@ -4,7 +4,13 @@ Host _host_
   IdentityFile _.pem
   Port         22
 
+Host github.com
+  Compression yes
+  Ciphers arcfour256
+
 Host *
   ServerAliveInterval 100
   ControlMaster auto
   ControlPath   /tmp/%r@%h:%p
+  Compression yes
+  Ciphers arcfour256
