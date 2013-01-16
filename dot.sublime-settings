@@ -1,14 +1,38 @@
 {
-	"color_scheme": "Packages/Railscasts.tmTheme",
-	"font_face": "Osaka",
-	"font_size": 11,
+	"auto_indent": true,
+	"auto_match_enabled": false,
+	"bold_folder_labels": true,
+	"default_encoding": "UTF-8",
+	"default_line_ending": "system",
+	"draw_white_space": "selection",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"find_selected_text": true,
+	"font_face": "Source Code Pro",
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Auto Encoding for Ruby"
 	],
+	"indent_to_bracket": false,
+	"line_numbers": true,
 	"line_padding_top": 4,
-	"tab_size": 4,
+	"margin": 2,
+	"preview_on_click": true,
+	"rulers":
+	[
+		80
+	],
+	"shift_tab_unindent": true,
+	"show_full_path": true,
+	"smart_indent": true,
+	"tab_completion": true,
+	"tab_size": 2,
+	"trailing_spaces_highlight_color": "invalid",
 	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false
 }
