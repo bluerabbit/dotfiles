@@ -171,11 +171,6 @@ bindkey '^X^B' backward-word
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
 
-# do brew install autojump
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
-
 # 3秒以上かかった処理は詳細表示
 REPORTTIME=3
 
@@ -189,4 +184,10 @@ function rezeus() {
     \rm .zeus.sock || true
     ps -ef | grep zeus | awk '{ print $2 }' | xargs kill || true
     bundle exec zeus start
+}
+
+# z https://github.com/rupa/z
+. `brew --prefix`/etc/profile.d/z.sh
+function precmd () {
+   z --add "$(pwd -P)"
 }

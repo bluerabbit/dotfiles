@@ -5,7 +5,7 @@ brew install tmux
 brew install reattach-to-user-namespace
 brew install emacs
 brew install tig
-brew install autojump
+brew install z
 brew install rbenv
 brew install ruby-build
 
