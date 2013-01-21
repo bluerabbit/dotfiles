@@ -8,6 +8,9 @@ Host github.com
   Compression yes
   Ciphers arcfour256
 
+Host *.ap-northeast-1
+  IdentityFile _aws_ec2_.pem
+
 Host *
   ServerAliveInterval 100
   ControlMaster auto
