@@ -38,6 +38,7 @@ function git_stash_count {
 	echo " stash:$result"
     fi
 }
+
 precmd () {
     psvar=()
     vcs_info
@@ -188,6 +189,9 @@ function rezeus() {
 
 # z https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
-function precmd () {
+z_precmd () {
    z --add "$(pwd -P)"
 }
+
+autoload -Uz add-zsh-hook
+add-zsh-hook preexec z_precmd
