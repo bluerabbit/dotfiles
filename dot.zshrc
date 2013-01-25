@@ -194,4 +194,4 @@ z_precmd () {
 }
 
 autoload -Uz add-zsh-hook
-add-zsh-hook preexec z_precmd
+add-zsh-hook precmd z_precmd
