@@ -1,10 +1,12 @@
 [client]
+password
 default-character-set=utf8
 
 [mysql]
 auto-rehash
 prompt = '\R:\m \U [\d]>\_'
 default-character-set=utf8
+show_warnings
 
 [mysqld]
 long_query_time=1
