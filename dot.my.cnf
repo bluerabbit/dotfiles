@@ -2,6 +2,7 @@
 password
 default-character-set=utf8
 pager = less -S
+tee = /tmp/mysql_client.log
 
 [mysql]
 auto-rehash
