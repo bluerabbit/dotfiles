@@ -12,6 +12,7 @@ show_warnings
 long_query_time=1
 slow_query_log=1
 slow-query-log-file=~/mysqld-slow-query.log
+log-queries-not-using-indexes
 
 #transaction-isolation=READ-COMMITTED
 #innodb_locks_unsafe_for_binlog=1
