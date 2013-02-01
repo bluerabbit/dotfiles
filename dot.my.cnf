@@ -1,6 +1,7 @@
 [client]
 password
 default-character-set=utf8
+pager = less -S
 
 [mysql]
 auto-rehash
