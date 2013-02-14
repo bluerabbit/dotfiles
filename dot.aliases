@@ -7,6 +7,7 @@ alias ll='ls -al'
 alias cdp='cd -P'
 alias tm="tmux -2 attach"
 alias tailf="tail -f"
+alias less="less -NS"
 
 alias l='ls -CF'
 alias dir='ls -al'
@@ -28,13 +29,16 @@ alias be='bundle exec'
 alias bu='bundle update'
 alias bi='bundle install'
 
+# for rspec
+alias br='bundle exec rspec '
+
 alias clup="find -E . -regex '.*\/(#.*#|.*~)' -print0 |xargs -0 rm"
 
 alias g='git'
-alias gg='git grep'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
+alias gg='git grep'
 
 ### functions
 function chpwd() { ls }
@@ -65,3 +69,4 @@ function cdb() {
 # for mac applications
 alias ce='open -a /Applications/Emacs.app/Contents/MacOS/Emacs'
 
+alias wget="wget --output-file=$HOME/.wget.log --append-output=$HOME/.wget.log"
