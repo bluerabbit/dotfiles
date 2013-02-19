@@ -15,5 +15,6 @@ Host *
   ServerAliveInterval 100
   ControlMaster auto
   ControlPath   /tmp/%r@%h:%p
+  ControlPersist 10
   Compression yes
   Ciphers arcfour256
