@@ -14,7 +14,7 @@ Host *.ap-northeast-1
 Host *
   ServerAliveInterval 100
   ControlMaster auto
-  ControlPath   /tmp/%r@%h:%p
+  ControlPath   ~/.ssh/mux-%r@%h:%p
   ControlPersist 10
   Compression yes
   Ciphers arcfour256
