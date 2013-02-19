@@ -153,12 +153,12 @@ source ~/.aliases
 
 # do brew install rbenv
 eval "$(rbenv init -)"
- 
+
 ## http://d.hatena.ne.jp/hiboma/20120315/1331821642
 ## Ctrl + X Crtl + Pでコマンドラインをクリップボードに登録
-pbcopy-buffer(){ 
+pbcopy-buffer(){
     print -rn $BUFFER | pbcopy
-    zle -M "pbcopy: ${BUFFER}" 
+    zle -M "pbcopy: ${BUFFER}"
 }
 
 zle -N pbcopy-buffer
@@ -195,3 +195,8 @@ z_precmd () {
 
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd z_precmd
+
+# ファイルから行数(from - to)を指定してその行のみの新しいファイルを作る
+function line_cut {
+    sed -n ''$1', '$2p'' $3 > $3_$1-$2.txt
+}
