@@ -44,6 +44,7 @@
     autocrlf = input
     # windows
     #autocrlf = true
+    #safecrlf = true
     quotepath = false
 [push]
     default = tracking
