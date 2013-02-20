@@ -45,5 +45,5 @@
 [push]
     default = tracking
 [tig "bind"]
-  generic = g move-first-line
-  generic = G move-last-line
+    generic = g move-first-line
+    generic = G move-last-line
