@@ -40,7 +40,10 @@
 [core]
     editor = emacs
     excludesfile = ~/.gitignore
+    # mac, linux
     autocrlf = input
+    # windows
+    #autocrlf = true
     quotepath = false
 [push]
     default = tracking
