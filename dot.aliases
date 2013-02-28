@@ -16,6 +16,9 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
+# node.js
+alias ni='npm install'
+
 # ディレクトリの履歴
 alias gd='dirs -v; echo -n "select number: "; read newdir; cd -"$newdir"'
 alias emacs='emacs -nw'
