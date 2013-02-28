@@ -1,0 +1,3 @@
+# vagrant's autoloading may not have kicked in
+require 'vagrant-vbguest' unless defined? VagrantVbguest::Config
+VagrantVbguest::Config.auto_update = false
