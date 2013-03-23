@@ -5,8 +5,10 @@ Host _host_
   Port         22
 
 Host github.com
+  HostName    ssh.github.com
+  Port        443
   Compression yes
-  Ciphers arcfour256
+  Ciphers     arcfour256
 
 Host *.ap-northeast-1
   IdentityFile _aws_ec2_.pem
