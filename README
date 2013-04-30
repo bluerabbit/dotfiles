@@ -9,6 +9,7 @@ brew install z
 brew install rbenv
 brew install ruby-build
 brew install jq
+brew install the_silver_searcher
 
 gem update --system
 gem update
