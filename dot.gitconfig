@@ -3,8 +3,8 @@
     email = akirakusumo10@gmail.com
 [alias]
     ci = commit
-    cim = commit -m 
-    cima = git commit --amend -m 
+    cim = commit -m
+    cima = git commit --amend -m
     st = status --ignore-submodules=dirty
 #    st = status -sb
     co = checkout
@@ -47,6 +47,8 @@
     #autocrlf = true
     #safecrlf = true
     quotepath = false
+[merge]
+    ff = false
 [push]
     default = tracking
 [tig "bind"]
