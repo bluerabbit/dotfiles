@@ -1,3 +1,6 @@
+### homebrew
+
+```
 brew update
 brew install git
 brew install hub
@@ -10,14 +13,18 @@ brew install rbenv
 brew install ruby-build
 brew install jq
 brew install the_silver_searcher
+```
 
+### rubygems
+
+```
 gem update --system
 gem update
 gem install bundler
 gem install pry pry-doc pry-remote pry-nav
 gem install powder
 gem install tmuxinator
-
+```
 
 ### node.js
 
@@ -30,5 +37,3 @@ $ nodebrew use latest
 ```
 $ npm install -g bower
 ```
-
-
