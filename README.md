@@ -23,7 +23,7 @@ gem update
 gem install bundler
 gem install pry pry-doc pry-remote pry-nav
 gem install powder
-gem install tmuxinator
+gem install tmuxinator -v 0.5.0
 ```
 
 ### node.js
