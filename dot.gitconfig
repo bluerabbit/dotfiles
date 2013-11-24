@@ -42,6 +42,7 @@
 [core]
     editor = emacs
     excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes_global
     # mac, linux
     autocrlf = input
     # windows
