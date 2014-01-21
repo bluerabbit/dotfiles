@@ -35,6 +35,7 @@
     branch = auto
     interactvie = auto
     grep = auto
+    ui = true
 [status]
     diff = auto
 [branch]
@@ -53,6 +54,10 @@
     ff = false
 [push]
     default = tracking
+[pager]
+    log  = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
 [tig "bind"]
     generic = g move-first-line
     generic = G move-last-line
