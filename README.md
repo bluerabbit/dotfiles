@@ -1,19 +1,7 @@
 ### homebrew
 
 ```
-brew update
-brew install zsh
-brew install git
-brew install hub
-brew install tmux
-brew install reattach-to-user-namespace
-brew install emacs
-brew install tig
-brew install z
-brew install rbenv
-brew install ruby-build
-brew install jq
-brew install the_silver_searcher
+brew bundle
 ```
 
 ### rubygems
