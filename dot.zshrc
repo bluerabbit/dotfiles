@@ -200,3 +200,10 @@ add-zsh-hook precmd z_precmd
 function line_cut {
     sed -n ''$1', '$2p'' $3 > $3_$1-$2.txt
 }
+
+# git current_branch
+function current_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
+}
