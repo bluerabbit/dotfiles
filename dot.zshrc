@@ -207,3 +207,12 @@ function current_branch() {
   ref=$(git rev-parse --short HEAD 2> /dev/null) || return
   echo ${ref#refs/heads/}
 }
+
+# create_pull_request topic "pull request title" develop
+function create_pull_request() {
+  git checkout -b $1 && \
+  git commit --allow-empty -m 'Make a pull request' && \
+  git push --set-upstream origin $1 && \
+  hub pull-request "$2" -b $3 && \
+  hub browse -- pull/$1
+}
