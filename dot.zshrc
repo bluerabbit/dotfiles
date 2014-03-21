@@ -178,15 +178,6 @@ REPORTTIME=3
 # https://github.com/aziz/tmuxinator/
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-################################################################################
-# rezeus https://github.com/burke/zeus
-################################################################################
-function rezeus() {
-    \rm .zeus.sock || true
-    ps -ef | grep zeus | awk '{ print $2 }' | xargs kill || true
-    bundle exec zeus start
-}
-
 # z https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 z_precmd () {
