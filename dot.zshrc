@@ -198,3 +198,9 @@ function current_branch() {
   ref=$(git rev-parse --short HEAD 2> /dev/null) || return
   echo ${ref#refs/heads/}
 }
+
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+autoload -U compinit
+compinit -u
