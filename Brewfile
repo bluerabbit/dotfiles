@@ -19,6 +19,7 @@ install z  || true
 install jq || true
 install the_silver_searcher        || true
 install reattach-to-user-namespace || true
+install zsh-completions            || true
 
 # .dmg
 #cask install google-chrome || true
