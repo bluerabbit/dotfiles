@@ -13,5 +13,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # 拡張子変更時に確認を求めない
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool true
 
+# スクリーンショットの保存先を変更する
+defaults write com.apple.screencapture location ~/ScreenShot
 # スクリーンショットのprefixを変更する
 defaults write com.apple.screencapture name "SS"
