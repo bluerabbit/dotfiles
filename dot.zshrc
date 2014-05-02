@@ -204,3 +204,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 autoload -U compinit
 compinit -u
+
+# golang version manager
+[[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm && gvm use go1.2 >/dev/null
