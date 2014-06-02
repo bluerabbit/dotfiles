@@ -52,6 +52,7 @@
     quotepath = false
 [merge]
     ff = false
+    conflictstyle = diff3
 [push]
     default = tracking
 [pager]
