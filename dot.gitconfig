@@ -50,6 +50,7 @@
     #autocrlf = true
     #safecrlf = true
     quotepath = false
+    precomposeunicode = true
 [merge]
     ff = false
     conflictstyle = diff3
