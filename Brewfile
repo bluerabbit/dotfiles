@@ -5,6 +5,7 @@ update
 tap homebrew/versions    || true
 tap phinze/homebrew-cask || true
 tap homebrew/binary      || true
+tap peco/peco            || true
 
 # Packages
 install zsh   || true
@@ -20,6 +21,7 @@ install jq || true
 install the_silver_searcher        || true
 install reattach-to-user-namespace || true
 install zsh-completions            || true
+install peco                       || true
 
 # .dmg
 #cask install google-chrome || true
