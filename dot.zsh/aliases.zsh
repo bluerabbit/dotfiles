@@ -75,3 +75,8 @@ alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 
 function runcpp () { g++ -O2 $1; ./a.out }
 alias -s {c,cpp}=runcpp
+
+# require 'p.function'
+alias o='git ls-files | p open'
+
+alias gb='git branch | p git checkout'
