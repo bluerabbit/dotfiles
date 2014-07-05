@@ -1,4 +1,3 @@
-### prompt
 unsetopt promptcr
 setopt prompt_subst
 autoload -U colors; colors
@@ -43,13 +42,3 @@ RUBY_INFO=$'%{$RUBY_COLOR%}$(ruby_prompt)%{${reset_color}%}'
 RPROMPT="${RUBY_INFO}%{${reset_color}%}"
 PROMPT=$'%{$fg[yellow]%}%n%{$fg[red]%}@$fg[green]%}%m %{$fg[cyan]%}%~ %1(v|%F{green}%1v%f|)$(git_stash_count)\n%{$fg[green]%}%#%{$reset_color%}'
 setopt transient_rprompt
-
-# http://www.machu.jp/diary/20040329.html#p01
-# プロンプトを’[user@hostname] $ ’の形式で表示　一般ユーザは $ でrootは # にする
-# プロンプトに色を付ける
-#local GREEN=$'%{\e[1;32m%}'
-#local BLUE=$'%{\e[1;34m%}'
-#local DEFAULT=$'%{\e[1;m%}'
-#PROMPT=$BLUE'[${USER}@${HOSTNAME}] %(!.#.$) '$DEFAULT
-#RPROMPT=$GREEN'[%~]'$DEFAULT
-#setopt PROMPT_SUBST
