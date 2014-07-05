@@ -7,7 +7,7 @@ alias ll='ls -al'
 alias cdp='cd -P'
 alias tm="tmux -2 attach"
 alias tailf="tail -f"
-alias less="less -NS"
+# alias less="less -NS"
 
 alias l='ls -CF'
 alias dir='ls -al'
@@ -42,31 +42,6 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
 alias gg='git grep'
-
-### functions
-function chpwd() { ls }
-
-function psg() {
-  psa | head -n 1
-  psa | grep $* | grep -v "ps -auxww" | grep -v grep
-}
-
-# up command
-# http://gist.github.com/607290
-# http://d.hatena.ne.jp/hitode909/20101002/1285994430
-function up() {
-    to=$(perl -le '$p=$ENV{PWD}."/";$d="/".$ARGV[0]."/";$r=rindex($p,$d);$r>=0 && print substr($p, 0, $r+length($d))' $1)
-    if [ "$to" = "" ]; then
-        echo "no such file or directory: $1" 1>&2
-        return 1
-    fi
-    cd $to
-}
-
-# cdb
-function cdb() {
-  cd `ruby -e "require 'rubygems';gem 'bundler';require 'bundler';Bundler.load.specs.each{|s| puts s.full_gem_path if s.name == '${1}'}"`
-}
 
 # for mac applications
 alias ce='open -a /Applications/Emacs.app/Contents/MacOS/Emacs'
