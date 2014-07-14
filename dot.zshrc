@@ -5,6 +5,7 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/pbcopy-buffer.zsh
 source ~/.zsh/peco-select-history.zsh
 source ~/.zsh/peco-proc.zsh
+source ~/.zsh/peco-src.zsh
 for f (~/.zsh/*.function) source "${f}"
 
 #source ~/.zsh/auto-fu_enabled.zsh
