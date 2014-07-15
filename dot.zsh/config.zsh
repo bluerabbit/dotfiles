@@ -10,6 +10,8 @@ compinit -u
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+setopt no_flow_control
+
 # 第1引数がディレクトリだと自動的に cd を補完
 setopt auto_cd
 
