@@ -2,9 +2,7 @@
     "LAYOUTS": "----------------------",
     "layouts": [
         "tall",
-        "wide",
-        "fullscreen",
-        "column"
+        "fullscreen"
     ],
 
     "MODIFIERS": "----------------------",
@@ -215,7 +213,7 @@
         "com.cockos.LICEcap"
     ],
     "float-small-windows": true,
-    "mouse-follows-focus": true,
+    "mouse-follows-focus": false,
     "focus-follows-mouse": true,
     "enables-layout-hud": true,
     "enables-layout-hud-on-space-change": true
