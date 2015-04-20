@@ -7,7 +7,8 @@ alias ll='ls -al'
 alias cdp='cd -P'
 alias tm="tmux -2 attach"
 alias tailf="tail -f"
-# alias less="less -NS"
+# alias less="less -qNRS"
+alias less="less -qRS"
 
 alias l='ls -CF'
 alias dir='ls -al'
