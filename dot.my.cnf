@@ -19,6 +19,10 @@ lower_case_table_names=1
 
 #transaction-isolation=READ-COMMITTED
 #innodb_locks_unsafe_for_binlog=1
+innodb_strict_mode = 1
+innodb_file_format = Barracuda
+innodb_large_prefix = 1
+innodb_file_per_table = 1
 
 skip-character-set-client-handshake
 character-set-server=utf8
