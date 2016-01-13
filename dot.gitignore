@@ -6,3 +6,4 @@ private.*
 .idea/
 .svn
 .envrc
+.xrayconfig
