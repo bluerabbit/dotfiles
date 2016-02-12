@@ -47,6 +47,17 @@ end
 Pry.config.commands.import default_command_set
 Pry.config.should_load_plugins = false
 
+if defined? AwesomePrint
+  begin
+    require 'awesome_print'
+    Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
+    # Pry.config.print = proc { |output, value| output.puts value.ai } #ページングなし
+  rescue LoadError => err
+    puts "no awesome_print :("
+    puts err
+  end
+end
+
 if defined? Hirb
  Hirb::View.instance_eval do
    def enable_output_method
