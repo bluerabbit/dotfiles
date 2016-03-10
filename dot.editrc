@@ -1,4 +1,5 @@
-mysql:bind "^r" em-inc-search-prev
+# mysql:bind "^r" em-inc-search-prev
+mysql:bind -s "^r" "system ~/.mysql_peco_history.sh"
 mysql:bind "\\t" rl_complete
 
 mysql:bind '^U' vi-kill-line-prev
