@@ -149,8 +149,5 @@ bindkey '^S' history-incremental-pattern-search-forward
 # 3秒以上かかった処理は詳細表示
 REPORTTIME=3
 
-# alias
-source ~/.aliases
-
 # do brew install rbenv
 eval "$(rbenv init -)"
