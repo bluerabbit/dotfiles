@@ -8,8 +8,7 @@ alias cdp='cd -P'
 alias tm="tmux -2 attach"
 alias tailf="tail -f"
 # alias less="less -qNRS"
-alias less="less -qRS"
-
+alias less='less -qRS --no-init --quit-if-one-screen'
 alias l='ls -CF'
 alias dir='ls -al'
 alias h='history'
