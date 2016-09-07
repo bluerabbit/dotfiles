@@ -1,0 +1,16 @@
+function circleci_open() {
+  open https://circleci.com/gh/$(github_user)/$(github_repo)/tree/$(current_branch)
+}
+
+function github_user(){
+  local current_dir=`pwd`
+  gh_user=`dirname ${current_dir}`
+  gh_user="${gh_user##*/}"
+  echo $gh_user
+}
+
+function github_repo(){
+  local current_dir=`pwd`
+  repo="${current_dir##*/}"
+  echo $repo
+}
