@@ -7,3 +7,5 @@ private.*
 .svn
 .envrc
 .xrayconfig
+pkg/
+src/github.com/
