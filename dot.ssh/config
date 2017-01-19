@@ -20,3 +20,4 @@ Host *
   ControlPersist 10
   Compression yes
   Ciphers arcfour256
+  UseKeychain yes
