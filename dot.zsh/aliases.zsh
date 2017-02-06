@@ -1,5 +1,6 @@
 alias vi="vim"
 alias view="vim -R"
+alias subl='reattach-to-user-namespace subl' # brew install reattach-to-user-namespace
 alias diff=colordiff
 alias ls='ls -GF'
 alias la='ls -a'
