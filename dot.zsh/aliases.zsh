@@ -16,6 +16,7 @@ alias h='history'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+alias public_ip='curl inet-ip.info'
 
 # node.js
 alias ni='npm install'
