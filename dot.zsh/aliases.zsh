@@ -17,6 +17,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias public_ip='curl inet-ip.info'
+alias ag='ag -u'
 
 # node.js
 alias ni='npm install'
