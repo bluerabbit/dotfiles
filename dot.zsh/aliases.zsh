@@ -45,6 +45,8 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
 alias gg='git grep'
+# git checkout B
+alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # for mac applications
 alias ce='open -a /Applications/Emacs.app/Contents/MacOS/Emacs'
