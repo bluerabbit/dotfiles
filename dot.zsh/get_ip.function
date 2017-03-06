@@ -1,0 +1,7 @@
+function public_ip() {
+  curl inet-ip.info
+}
+
+function local_ip() {
+  netstat -rn | grep 'UHLWIi.*lo0' | awk '{print $1}'
+}
