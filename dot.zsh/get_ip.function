@@ -3,5 +3,5 @@ function public_ip() {
 }
 
 function local_ip() {
-  netstat -rn | grep 'UHLWIi.*lo0' | awk '{print $1}'
+  ruby -r socket -e 'puts Socket.ip_address_list.detect{|intf| intf.ipv4_private?}.ip_address'
 }
