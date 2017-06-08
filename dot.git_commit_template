@@ -3,7 +3,7 @@
 # 💚  :green_heart: Fix broken spec
 # 👕  :shirt: Fix lint / Cosmetic
 # 🎨  :art: Update design
-# 🐛  :bug: Fix bug
+# 🚑  :ambulance: Fix bug
 # 🔧  :wrench: Update configration
 # 🚿  :shower: Remove commented code / Remove unused code
 # ✨  :sparkles: Added A feature of __
@@ -14,6 +14,5 @@
 # ➕  :heavy_plus_sign: Add gem __
 # ➖  :heavy_minus_sign: Remove gem __
 # 👮  :cop: Fix security
-# ⚠️  :warning: Avoiding Problems
-# 🔀  :twisted_rightwards_arrows: Merge from __
-# Ⓜ️  :m: Update Database Schema
+# ⚠️ :warning: Avoiding Problems
+# 🔀 :twisted_rightwards_arrows: Merge from __
