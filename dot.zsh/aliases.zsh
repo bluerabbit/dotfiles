@@ -84,3 +84,12 @@ alias -s {c,cpp}=runcpp
 alias o='git ls-files | p open'
 
 alias gb='git branch | p git checkout'
+
+# docker for mac http://qiita.com/shinespark/items/526b70b5f0b1ac643ba0
+alias d='docker'
+alias dc='docker-compose'
+alias docker_size='du -m ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2'
+alias rm_docker_images='docker images -qf dangling=true | xargs docker rmi'
+alias rm_docker_containers='docker ps -aqf status=exited | xargs docker rm -v' # rm with volumes
+alias rm_docker_volumes='docker volume ls -qf dangling=true | xargs docker volume rm'
+alias rm_docker_compose_containers='docker-compose rm -fv'
