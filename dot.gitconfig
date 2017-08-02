@@ -5,7 +5,7 @@
     ci = commit
     cim = commit -m
     cima = git commit --amend -m
-    st = status --ignore-submodules=dirty
+    st = status --ignore-submodules=dirty --short
 #    st = status -sb
     co = checkout
     url = config --get remote.origin.url
