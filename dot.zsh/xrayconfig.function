@@ -1,0 +1,3 @@
+function xrayconfig() {
+  echo ":editor: \"idea $(pwd) \$file"\" > .xrayconfig
+}
