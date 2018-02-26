@@ -24,6 +24,7 @@ install reattach-to-user-namespace || true
 install zsh-completions            || true
 install peco                       || true
 install ghq                        || true
+install git-secrets || true
 
 # .dmg
 #cask install google-chrome || true
