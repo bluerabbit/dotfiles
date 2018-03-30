@@ -9,3 +9,5 @@ private.*
 .xrayconfig
 pkg/
 src/github.com/
+.sekrets.key
+secrets.yml.key
