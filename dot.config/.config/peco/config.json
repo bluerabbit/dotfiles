@@ -1,5 +1,4 @@
 {
-  "InitialFilter": "Fuzzy",
   "Keymap": {
     "C-u": "peco.ScrollPageUp",
     "C-v": "peco.ScrollPageDown"
