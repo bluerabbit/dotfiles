@@ -7,7 +7,6 @@
 :sources:
 - http://gems.github.com
 - http://gemcutter.org/
-gem: --no-ri --no-rdoc
-
-install: --no-ri --no-rdoc
-update:  --no-ri --no-rdoc
+gem: --no-document
+install: --no-document
+update:  --no-document
