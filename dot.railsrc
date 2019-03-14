@@ -1,0 +1,4 @@
+--skip-bundle
+--skip-turbolinks
+--skip-action-cable
+--skip-test
