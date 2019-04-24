@@ -40,6 +40,8 @@
     diff = auto
 [branch]
     diff = auto
+[fetch]
+    prune = true
 [core]
     editor = emacs
     excludesfile = ~/.gitignore
