@@ -43,7 +43,7 @@
 [fetch]
     prune = true
 [core]
-    editor = emacs
+    editor = subl
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes_global
     # mac, linux
