@@ -3,10 +3,11 @@ source ~/.zsh/bindkey.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/pbcopy-buffer.zsh
-source ~/.zsh/peco-select-history.zsh
-source ~/.zsh/peco-proc.zsh
-source ~/.zsh/peco-src.zsh
-source ~/.zsh/peco-select-ssh.zsh
+source ~/.zsh/ghq-fzf.zsh
+source ~/.zsh/git-branch-fzf.zsh
+source ~/.zsh/history-fzf.zsh
+source ~/.zsh/ssh-fzf.zsh
+source ~/.zsh/tree-fzf.zsh
 source ~/.zsh/node-version.zsh
 for f (~/.zsh/*.function) source "${f}"
 
