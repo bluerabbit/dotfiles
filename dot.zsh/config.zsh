@@ -39,8 +39,8 @@ setopt auto_resume
 ## 補完候補を一覧表示
 setopt auto_list
 
-## 直前と同じコマンドをヒストリに追加しない
-setopt hist_ignore_dups
+## 同じコマンドをヒストリに追加しない
+setopt hist_ignore_all_dups
 
 ## cd 時に自動で push
 setopt autopushd
