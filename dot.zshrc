@@ -7,7 +7,6 @@ source ~/.zsh/ghq-fzf.zsh
 source ~/.zsh/git-branch-fzf.zsh
 source ~/.zsh/history-fzf.zsh
 source ~/.zsh/ssh-fzf.zsh
-source ~/.zsh/tree-fzf.zsh
 source ~/.zsh/node-version.zsh
 for f (~/.zsh/*.function) source "${f}"
 
