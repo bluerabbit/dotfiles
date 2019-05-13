@@ -24,7 +24,8 @@ install zsh-completions            || true
 install fzf                        || true
 install ghq                        || true
 install git-secrets || true
-install bat || true
+install bat         || true
+install expect      || true
 
 # .dmg
 #cask install google-chrome || true
