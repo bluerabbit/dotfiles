@@ -5,6 +5,7 @@
     ci = commit
     cim = commit -m
     cima = git commit --amend -m
+    cih = commit --amend -C @
     st = status --ignore-submodules=dirty --short
 #    st = status -sb
     co = checkout
