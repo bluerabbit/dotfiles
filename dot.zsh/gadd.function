@@ -1,0 +1,11 @@
+function gadd() {
+    local selected
+    selected=$(unbuffer git status -s | fzf -m --ansi --preview="echo {} | awk '{print \$2}' | xargs git diff --color" | awk '{print $2}')
+
+    if [[ -n "$selected" ]]; then
+        selected=$(tr '\n' ' ' <<< "$selected")
+        trimSelected=$(echo $selected | awk '{sub(/[ \t]+$/, "")}1')
+        git add $trimSelected
+        echo "Completed: git add $trimSelected"
+    fi
+}

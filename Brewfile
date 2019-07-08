@@ -5,7 +5,6 @@ update
 tap homebrew/versions    || true
 tap phinze/homebrew-cask || true
 tap homebrew/binary      || true
-tap peco/peco            || true
 tap motemen/ghq          || true
 
 # Packages
@@ -22,9 +21,11 @@ install jq || true
 install the_silver_searcher        || true
 install reattach-to-user-namespace || true
 install zsh-completions            || true
-install peco                       || true
+install fzf                        || true
 install ghq                        || true
 install git-secrets || true
+install bat         || true
+install expect      || true
 
 # .dmg
 #cask install google-chrome || true

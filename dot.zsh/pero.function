@@ -1,3 +1,0 @@
-function pero() {
-  ag "$@" . | peco --exec 'awk -F : '"'"'{print "+" $2 " " $1}'"'"' | xargs less -N '
-}

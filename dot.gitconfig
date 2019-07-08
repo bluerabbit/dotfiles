@@ -22,6 +22,7 @@
     ro = rebase origin
     b = branch
     bm = branch --merged
+    bc = !git branch | fzf | xargs git checkout
     d = diff
     ds = diff --staged
     dc = diff --cached
