@@ -4,7 +4,6 @@ source ~/.zsh/prompt.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/pbcopy-buffer.zsh
 source ~/.zsh/ghq-fzf.zsh
-source ~/.zsh/git-branch-fzf.zsh
 source ~/.zsh/history-fzf.zsh
 source ~/.zsh/ssh-fzf.zsh
 source ~/.zsh/node-version.zsh
