@@ -10,4 +10,4 @@ function git-branch-fzf() {
 }
 
 zle -N git-branch-fzf
-bindkey "^b" git-branch-fzf
+# bindkey "^b" git-branch-fzf
