@@ -1,5 +1,4 @@
 require 'pp'
-require 'rubygems'
 require 'irb/completion'
 
 begin
