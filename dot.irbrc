@@ -1,12 +1,6 @@
 require 'pp'
 require 'irb/completion'
-
-begin
-  require 'irb/history'
-  IRB::History.start_client
-rescue LoadError => e
-  require 'irb/ext/save-history'
-end
+require 'irb/ext/save-history'
 
 #IRB.conf[:PROMPT][:ORIGINAL] = {
 #  :PROMPT_I => "%03n:>> ",
