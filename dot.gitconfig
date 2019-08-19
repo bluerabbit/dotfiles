@@ -61,9 +61,10 @@
 [push]
     default = current
 [pager]
-    log  = diff-highlight | less
-    show = diff-highlight | less
-    diff = diff-highlight | less
+    branch = cat
+    log    = diff-highlight | less
+    show   = diff-highlight | less
+    diff   = diff-highlight | less
 [tig "bind"]
     generic = g move-first-line
     generic = G move-last-line
