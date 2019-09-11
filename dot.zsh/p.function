@@ -1,0 +1,6 @@
+# http://r7kamura.github.io/2014/06/21/ghq.html
+# pecoで絞り込んだ出力結果に対してコマンドを実行する関数p
+
+function p() {
+  peco | while read LINE; do $@ $LINE; done
+}
