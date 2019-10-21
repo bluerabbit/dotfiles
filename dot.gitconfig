@@ -55,6 +55,10 @@
     #safecrlf = true
     quotepath = false
     precomposeunicode = true
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
     ff = false
     conflictstyle = diff3
