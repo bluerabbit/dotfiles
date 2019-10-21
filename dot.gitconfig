@@ -45,7 +45,7 @@
 [fetch]
     prune = true
 [core]
-    editor = subl
+    editor = code --wait
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes_global
     # mac, linux
