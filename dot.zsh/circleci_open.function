@@ -1,5 +1,5 @@
 function circleci_open() {
-  open https://circleci.com/gh/$(github_user)/$(github_repo)/tree/$(current_branch)
+  open https://circleci.com/gh/$(github_user)/$(github_repo)/tree/$(git symbolic-ref --short HEAD)
 }
 
 function github_user(){
