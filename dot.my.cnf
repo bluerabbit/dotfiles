@@ -29,6 +29,8 @@ character-set-server=utf8
 collation-server=utf8_general_ci
 
 sql-mode=TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY
+# for mac
+table_open_cache=400
 
 [mysqldump]
 default-character-set=utf8
