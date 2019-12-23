@@ -32,5 +32,7 @@ sql-mode=TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY
 # for mac
 table_open_cache=400
 
+#innodb_force_recovery=0
+
 [mysqldump]
 default-character-set=utf8
