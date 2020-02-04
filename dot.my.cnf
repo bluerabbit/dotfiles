@@ -34,5 +34,7 @@ table_open_cache=400
 
 #innodb_force_recovery=0
 
+max_allowed_packet=16M
+
 [mysqldump]
 default-character-set=utf8
