@@ -32,6 +32,8 @@
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
     push-f = push --force-with-lease
+    create-pull-request = "!hub browse -- compare/develop...$(git symbolic-ref --short HEAD)"
+    create-issue = "!hub browse -- issues/new"
 [color]
     diff = auto
     status = auto
