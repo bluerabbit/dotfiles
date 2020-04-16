@@ -11,12 +11,13 @@ Pry.commands.alias_command 'f', 'finish'
   end
 end
 
-Pry.config.prompt = proc do |obj, level, _|
-  prompt = ""
-  prompt << "#{Rails.version}@" if defined?(Rails)
-  prompt << "#{RUBY_VERSION}"
-  "#{prompt} (#{obj})> "
-end
+prompt = "#{defined?(Rails) ? "#{Rails.version}@" : ""}#{RUBY_VERSION}"
+
+Pry.config.prompt = Pry::Prompt.new(
+  "custom",
+  "my custom prompt",
+  [ proc {|obj, level, _| "#{prompt} (#{obj})> " }]
+)
 
 Pry.config.editor = "emacs -w"
 
