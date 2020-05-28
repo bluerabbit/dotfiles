@@ -34,6 +34,7 @@
     push-f = push --force-with-lease
     create-pull-request = "!hub browse -- compare/develop...$(git symbolic-ref --short HEAD)"
     create-issue = "!hub browse -- issues/new"
+    p = push -u origin HEAD
 [color]
     diff = auto
     status = auto
