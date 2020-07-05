@@ -6,7 +6,8 @@ default-character-set=utf8
 
 [mysql]
 auto-rehash
-prompt = '\R:\m \U [\d]>\_'
+prompt = '\R:\m \U [\d] \C>'
+#prompt = '\R:\m \U @ \h[\d]\C>'
 default-character-set=utf8
 show_warnings
 
