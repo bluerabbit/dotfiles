@@ -3,6 +3,7 @@ password
 default-character-set=utf8
 #pager = less -S
 #tee = /tmp/mysql_client.log
+#loose-local-infile=1
 
 [mysql]
 auto-rehash
@@ -36,6 +37,8 @@ table_open_cache=400
 #innodb_force_recovery=0
 
 max_allowed_packet=16M
+
+#local_infile=1
 
 [mysqldump]
 default-character-set=utf8
