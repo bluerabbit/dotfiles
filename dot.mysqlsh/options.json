@@ -1,0 +1,5 @@
+{
+    "useWizards": "true",
+    "history.autoSave": "true",
+    "defaultMode": "sql"
+}
