@@ -1,0 +1,17 @@
+{
+  "db": "mdb",
+  "database": {
+    "sdb": {
+      "driver": "sqlite3",
+      "dsn": ""
+    },
+    "pdb": {
+      "driver": "postgres",
+      "dsn": "dbname=trdsql sslmode=disable"
+    },
+    "mdb": {
+      "driver": "mysql",
+      "dsn": "root:your_password@/trdsql"
+    }
+  }
+}
