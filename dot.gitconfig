@@ -35,6 +35,7 @@
     create-pull-request = "!hub browse -- compare/develop...$(git symbolic-ref --short HEAD)"
     create-issue = "!hub browse -- issues/new"
     p = push -u origin HEAD
+    openpr = "!hub browse --  $(git log --merges --oneline --reverse --ancestry-path $1...develop | grep 'Merge pull request #' | head -n 1 | cut -f6 -d' ' | sed -e 's%#%pull/%')"
 [color]
     diff = auto
     status = auto
