@@ -2,40 +2,19 @@
     name = Akira Kusumoto
     email = akirakusumo10@gmail.com
 [alias]
-    ci = commit
     cim = commit -m
-    cima = git commit --amend -m
-    cih = commit --amend -C @
     st = status --ignore-submodules=dirty --short
-#    st = status -sb
     co = checkout
     url = config --get remote.origin.url
     pr = pull --rebase
-    rbm = rebase master
-    rc = rebase --continue
-    lp = log -p
-    ls = log --stat
-    lg= log --decorate
-    lgg= log --decorate --oneline --graph
-    wd= diff --word-diff
-    fo = fetch origin
-    ro = rebase origin
     b = branch
-    bm = branch --merged
     bc = !git branch | fzf | xargs git checkout
     d = diff
     ds = diff --staged
     dc = diff --cached
     rmall = "!f() { git status | grep deleted: | awk '{print $3}'  | xargs ; }; git rm `f`"
-    # colorized cheery -v
-    cch= "!f() { git cherry -v "$@" | awk '{ if($1 == \"+\"){ color = \"green\" } if($1 == \"-\"){ color = \"red\" } cmd = \"git show --date=short --no-notes --pretty=format:\\047%C\" color $1 \" %h %Cgreen%cd %Cblue%cn%x09%Creset%s\\047 --summary \" $2; cmd | getline t; close(cmd); print t }' ;}; f"
-    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
-    push-f = push --force-with-lease
-    create-pull-request = "!hub browse -- compare/develop...$(git symbolic-ref --short HEAD)"
-    create-issue = "!hub browse -- issues/new"
     p = push -u origin HEAD
-    openpr = "!hub browse --  $(git log --merges --oneline --reverse --ancestry-path $1...develop | grep 'Merge pull request #' | head -n 1 | cut -f6 -d' ' | sed -e 's%#%pull/%')"
 [color]
     diff = auto
     status = auto
