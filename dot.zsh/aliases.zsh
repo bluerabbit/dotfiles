@@ -1,13 +1,7 @@
 alias vi="vim"
-alias view="vim -R"
-alias subl='reattach-to-user-namespace subl' # brew install reattach-to-user-namespace
 alias diff=colordiff
 alias ls='ls -GF'
 alias la='ls -a'
-alias ll='ls -al'
-alias cdp='cd -P'
-alias tm="tmux -2 attach"
-alias tailf="tail -f"
 # alias less="less -qNRS"
 alias less='less -qRS --no-init --quit-if-one-screen'
 alias l='ls -CF'
@@ -17,9 +11,6 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ag='ag -u'
-
-# node.js
-alias ni='npm install'
 
 # ディレクトリの履歴
 alias gd='dirs -v; echo -n "select number: "; read newdir; cd -"$newdir"'
@@ -46,9 +37,6 @@ alias -g G='| grep'
 alias gg='git grep'
 # git checkout B
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
-
-# for mac applications
-alias ce='open -a /Applications/Emacs.app/Contents/MacOS/Emacs'
 
 alias wget="wget --output-file=$HOME/.wget.log --append-output=$HOME/.wget.log"
 
