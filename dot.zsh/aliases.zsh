@@ -81,3 +81,7 @@ alias rm_docker_images='docker images -qf dangling=true | xargs docker rmi'
 alias rm_docker_containers='docker ps -aqf status=exited | xargs docker rm -v' # rm with volumes
 alias rm_docker_volumes='docker volume ls -qf dangling=true | xargs docker volume rm'
 alias rm_docker_compose_containers='docker-compose rm -fv'
+
+# github cli
+alias ghpr='gh pr view --web $(gh pr list | fzf | cut -f 1)'
+alias ghprw='gh pr view --web $(git symbolic-ref --short HEAD)'
