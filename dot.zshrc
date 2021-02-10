@@ -7,6 +7,7 @@ source ~/.zsh/ghq-fzf.zsh
 source ~/.zsh/history-fzf.zsh
 source ~/.zsh/ssh-fzf.zsh
 source ~/.zsh/node-version.zsh
+source ~/.zsh/fzf-checkout-pull-request.zsh
 for f (~/.zsh/*.function) source "${f}"
 
 #source ~/.zsh/auto-fu_enabled.zsh
