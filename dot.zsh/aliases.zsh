@@ -31,6 +31,7 @@ alias br='bundle exec rspec '
 alias clup="find -E . -regex '.*\/(#.*#|.*~)' -print0 |xargs -0 rm"
 
 alias g='git'
+alias gpr='git stash && git pull --rebase && git stash pop'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
