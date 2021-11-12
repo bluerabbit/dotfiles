@@ -40,5 +40,5 @@ precmd () {
 
 RUBY_INFO=$'%{$RUBY_COLOR%}$(ruby_prompt)%{${reset_color}%}'
 RPROMPT="${RUBY_INFO}%{${reset_color}%}"
-PROMPT=$'%{$fg[yellow]%}%n%{$fg[red]%}@$fg[green]%}%m$(echo "(`uname -m`)")%{$fg[cyan]%}%~ %1(v|%F{green}%1v%f|)$(git_stash_count)\n%{$fg[green]%}%#%{$reset_color%}'
+PROMPT=$'%{$fg[yellow]%}%n%{$fg[red]%}@$fg[green]%}%m[$(uname -m)] %{$fg[cyan]%}%~ %1(v|%F{green}%1v%f|)$(git_stash_count)\n%{$fg[green]%}%#%{$reset_color%}'
 setopt transient_rprompt
