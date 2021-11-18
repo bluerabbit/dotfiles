@@ -20,4 +20,5 @@ Host *
   ControlPersist 10
   Compression yes
   Ciphers arcfour256
+  AddKeysToAgent yes
   UseKeychain yes
