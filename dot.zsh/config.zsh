@@ -98,3 +98,6 @@ setopt auto_pushd
 
 # 3秒以上かかった処理は詳細表示
 REPORTTIME=3
+
+# 履歴を残したくない場合先頭に半角スペースを入れて実行
+setopt hist_ignore_space
