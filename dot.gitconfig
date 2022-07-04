@@ -45,7 +45,7 @@
     cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
     ff = false
-    conflictstyle = diff3
+    #conflictstyle = diff3
 [push]
     default = current
 [pager]
