@@ -11,7 +11,7 @@ tap motemen/ghq          || true
 install zsh   || true
 install git   || true
 install tig   || true
-install hub   || true
+install gh   || true
 install tmux  || true
 install emacs || true
 install rbenv || true
