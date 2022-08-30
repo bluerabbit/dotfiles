@@ -1,0 +1,11 @@
+function nkf_to_sjis() {
+  nkf --sjis $1 > "sjis_$1"
+}
+
+function nkf_to_utf8() {
+  nkf --oc=UTF-8 $1 > "utf8_$1"
+}
+
+function nkf_guess() {
+  nkf --guess $1
+}
