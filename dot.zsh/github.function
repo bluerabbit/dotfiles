@@ -1,0 +1,18 @@
+function repo_name() {
+    local repo_url=$(git config --get remote.origin.url)
+    local owner_name=$(echo $repo_url | awk -F'[:/]' '{n=split($(NF-1),a,"/"); print a[n]}')
+    local repo_name=$(basename $repo_url .git)
+    echo "$owner_name/$repo_name"
+}
+
+function current_branch() {
+  git symbolic-ref --short HEAD
+}
+
+function pr_open() {
+  open "https://github.com/$(repo_name)/pull/$(current_branch)"
+}
+
+function github_actions_open() {
+  open "https://github.com/$(repo_name)/actions?query=branch%3A$(current_branch)"
+}
