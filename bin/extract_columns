@@ -2,6 +2,8 @@
 
 # input.csvから2個目と4個目の項目だけを抽出する
 # ./extract_columns input.csv 2,4
+# awk -F ',' '{OFS=","; print $2, $4}' input.csv
+
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 <input.csv> <fields>"
     exit 1
