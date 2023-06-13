@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# input.csvから2個目と4個目の項目だけを抽出する
+# ./extract_columns input.csv 2,4
+if [[ $# -ne 2 ]]; then
+    echo "Usage: $0 <input.csv> <fields>"
+    exit 1
+fi
+
+input_file=$1
+fields=$2
+
+awk -v var="$fields" -F ',' 'BEGIN {OFS=","} {split(var, a, ","); for (i in a) printf "%s,", $a[i]; printf "\n"}' $input_file
