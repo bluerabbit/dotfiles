@@ -101,3 +101,6 @@ REPORTTIME=3
 
 # 履歴を残したくない場合先頭に半角スペースを入れて実行
 setopt HIST_IGNORE_SPACE
+
+# 重複を記録しない
+setopt hist_ignore_dups
