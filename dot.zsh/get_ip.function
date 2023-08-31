@@ -1,5 +1,5 @@
 function public_ip() {
-  curl ifconfig.me
+  curl http://checkip.amazonaws.com/
 }
 
 function local_ip() {
