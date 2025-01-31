@@ -1,5 +1,6 @@
 source ~/.zsh/config.zsh
 source ~/.zsh/bindkey.zsh
+source ~/.zsh/scroll_to_prompt.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/pbcopy-buffer.zsh
 source ~/.zsh/ghq-fzf.zsh
