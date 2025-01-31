@@ -1,0 +1,63 @@
+command_timeout = 2000
+continuation_prompt = '[❯❯ ](fg:blue)'
+scan_timeout = 10
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[package]
+disabled = true
+
+[time]
+time_format = "%T"
+format = "$time($style)"
+style = "bright-white"
+disabled = false
+
+[character]
+error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold green)"
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+truncation_symbol = "…/"
+
+[custom.arch]
+command = "uname -m"
+when = """ test $(uname -m) = "x86_64" """
+style = "bold yellow"
+format = "[$output]($style)"
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[git_status]
+conflicted = "⚔️"
+ahead = "🏎️💨×${count}"
+behind = "🐢×${count}"
+diverged = "🔱🏎️💨×${ahead_count} 🐢×${behind_count}"
+untracked = "🛤️×${count} "
+stashed = "📦×${count} "
+modified = "📝×${count} "
+staged = "🗃️×${count} "
+renamed = "📛×${count} "
+deleted = "🗑️×${count} "
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[ruby]
+format = "[$symbol($version )]($style)"
+version_format = "${raw}"
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+version_format = "${raw}"
+symbol = " "
+
+[gcloud]
+#format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+disabled = true
