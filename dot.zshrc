@@ -17,5 +17,3 @@ eval "$(rbenv init -)"
 # golang version manager
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
-# https://github.com/aziz/tmuxinator/
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
