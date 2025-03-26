@@ -1,0 +1,16 @@
+cat_sjis() {
+  if [[ -t 0 && $# -eq 0 ]]; then
+    echo "Usage: catsjis [filename] or echo [text] | catsjis"
+    return 1
+  fi
+
+  if [[ -t 0 ]]; then
+    # ファイルを指定された場合
+    for file in "$@"; do
+      iconv -f SHIFT_JIS -t UTF-8 "$file"
+    done
+  else
+    # パイプから渡された場合
+    iconv -f SHIFT_JIS -t UTF-8
+  fi
+}
