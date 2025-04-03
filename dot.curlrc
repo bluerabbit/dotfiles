@@ -1,0 +1,29 @@
+--silent
+
+# --fail: HTTP ステータスコード 400 以上のエラーがあったときに終了コードを非 0 にして失敗とみなす
+# --fail
+
+# --show-error: エラー時にはエラーメッセージを表示する
+# --show-error
+
+# --location: 30x リダイレクトを自動的にたどる
+# --location
+
+# --header "Authorization: Bearer your_token"
+# --header "Content-Type: application/json"
+# --header "Accept: application/json"
+
+# --user-agent "MyCurlClient/1.0"
+
+# --connect-timeout <秒>: 接続タイムアウトの秒数
+# --max-time <秒>: 全通信プロセスでの最大秒数
+# --connect-timeout 5
+# --max-time 60
+
+# --retry <回数>: リトライ回数
+# --retry-delay <秒>: リトライまでの待ち時間
+# --retry 3
+# --retry-delay 2
+
+# --compressed: サーバーが対応していれば圧縮転送 (gzip/deflate) を有効にして通信量を削減
+# --compressed
