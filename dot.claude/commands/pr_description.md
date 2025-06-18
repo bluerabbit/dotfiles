@@ -1,0 +1,1 @@
+今のブランチのコミット履歴を確認してPull Requestのdescriptionに書く内容を考えてください：

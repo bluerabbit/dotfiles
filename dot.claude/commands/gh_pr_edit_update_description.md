@@ -1,0 +1,1 @@
+今のブランチのコミット履歴を確認してGitHub Pull Requestのdescriptionに書く内容を考えてgh pr editを使って更新してください：

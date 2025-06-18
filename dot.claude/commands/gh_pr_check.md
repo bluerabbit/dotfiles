@@ -1,0 +1,1 @@
+ghコマンドでGitHub Actionsの実行状況を確認して:

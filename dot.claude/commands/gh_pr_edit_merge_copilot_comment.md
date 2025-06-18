@@ -1,0 +1,1 @@
+gh pr editを使ってcopilot-pull-request-reviewerからのレビューコメントをdescriptionにマージして:

@@ -1,0 +1,1 @@
+gh pr createを使ってGitHub Pull Requestを作成してください。作成後にghコマンドで自分をPRにアサインしてください:
