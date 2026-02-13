@@ -243,4 +243,13 @@ config.key_tables = {
   },
 }
 
+config.mouse_bindings = {
+  {
+    -- 左クリック3回でカーソル位置のコマンド出力を選択
+    event = { Down = { streak = 3, button = "Left" } },
+    action = wezterm.action.SelectTextAtMouseCursor("SemanticZone"),
+    mods = "NONE",
+  },
+}
+
 return config
